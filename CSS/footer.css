@@ -1,0 +1,48 @@
+.footertop_flexcontainer {
+    background-color: #C6D993;
+    color: #2C351D;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 50px 16px 40px 16px;
+}
+
+.footerflexitem {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.applinks {
+    display: flex;
+    flex-direction: row;
+}
+
+.appimg {
+    max-width: 100px;
+}
+
+.footerbottom_flexcontainer {
+    background-color: #45542D;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.socialicon {
+    max-width: 20px;
+}
+
+
+/* Responsivity - Tablet/Mobile */
+
+@media (max-width:750px) {
+    .footertop_flexcontainer {
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 30px 16px 40px 16px;
+    }
+    }
+    
+   
