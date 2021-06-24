@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../CSS/menu.css" />
+    <link rel="stylesheet" href="../CSS/button.css">
+    <link rel="stylesheet" href="../CSS/navigationbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a class="logo" href="../HTML/homepage.html" class="active">
+                <div class="logocontainer">
+                    <img class="logo" src="../Photos/Homepage/logo.png" alt="logo">
+                </div>
+            </a>
+            <ul class="middle-nav">
+                <li><a class="nav1" href="">Menus</a></li>
+                <li><a class="nav1" href="">Our Plans</a></li>
+                <li><a class="nav1" href="">How it Works</a></li>
+            </ul>
+            <div class="loginbuttons">
+                <button class="small red">Sign Up</button>
+                <a class="button" href="../HTML/login.html">Log In</a>
+            </div>
+        </div>
+
+        <!--Nav Bar for Tablet/Mobile-->
+        <div class="navbar2">
+            <a class="nav2" href="../HTML/homepage.html" class="active">
+                <div class="logocontainer">
+                    <img class="logo" src="../Photos/Homepage/logo.png" alt="logo">
+                </div>
+            </a>
+            <div id="myLinks">
+                <a class="nav2" href="#news">Menu</a>
+                <a class="nav2" href="#contact">Our Plans</a>
+                <a class="nav2" href="#about">How it Works</a>
+                <a class="nav2" href="../HTML/login.html"><b>LOGIN</b></a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fas fa-bars fa-2x"></i>
+            </a>
+        </div>
+        </div>
+        <!---->
+
+        <section class="promobanner">
+            <div>
+                <p>Save $12.99 when you order your first box! <span class="underline">Learn More</span></p>
+            </div>
+        </section>
+    </header>
+
+    <main>
+
+        <section class="contentblockwhite">
+            <h2>Menu for Delivery the Week Of:</h2>
+            <div class="datepicker">
+                <img src="../Photos/Menus/arrowleft.png">
+                <h1 class="datetext">JUNE 28</h1>
+                <img src="../Photos/Menus/arrowright.png">
+            </div>
+        </section>
+
+        <section class="contentblockwhite">
+            <div class="rectangularflexcontainer">
+                <div class="rectangleflexitem">
+                    <img class="cardimg" src="../Photos/Homepage/eggrisotto.jpg" alt="egg risotto">
+                    <div class="cardtext">
+                        <h5 class="cardheader">Egg and Cucumber Risotto</h5>
+                        <p class="cardsubhead">with Aged Cheddar and Cilantro</p>
+                        <button class="small borderbold bottommargin">Order Recipe</button>
+                    </div>
+                </div>
+                <div class="rectangleflexitem">
+                    <img class="cardimg" src="../Photos/Homepage/shortribs.jpg" alt="short ribs">
+                    <div class="cardtext">
+                        <h5 class="cardheader">Barbeque Short Ribs</h5>
+                        <p class="cardsubhead">with Mixed Vegetables</p>
+                        <button class="small borderbold bottommargin">Order Recipe</button>
+                    </div>
+                </div>
+                <div class="rectangleflexitem">
+                    <img class="cardimg" src="../Photos/Homepage/berrysalad.jpg" alt="berry salad">
+                    <div class="cardtext">
+                        <h5 class="cardheader">Summer Berry Salad</h5>
+                        <p class="cardsubhead">with Strawberries and Pecans</p>
+                        <button class="small borderbold bottommargin">Order Recipe</button>
+                    </div>
+                </div>
+                <div class="rectangleflexitem">
+                    <img class="cardimg" src="../Photos/Menus/pancakes.jpg" alt="pancakes">
+                    <div class="cardtext">
+                        <h5 class="cardheader">Pancakes</h5>
+                        <p class="cardsubhead">with Mixed Fruit and Caramel Sauce</p>
+                        <button class="small borderbold bottommargin">Order Recipe</button>
+                    </div>
+                </div>
+                <div class="rectangleflexitem">
+                    <img class="cardimg" src="../Photos/Menus/wonton.jpg" alt="wonton soup">
+                    <div class="cardtext">
+                        <h5 class="cardheader">Wonton Soup</h5>
+                        <p class="cardsubhead">with Scallions</p>
+                        <button class="small borderbold bottommargin">Order Recipe</button>
+                    </div>
+                </div>
+                <div class="rectangleflexitem">
+                    <img class="cardimg" src="../Photos/Menus/grilledhalibut.jpg" alt="grilled halibut">
+                    <div class="cardtext">
+                        <h5 class="cardheader">Grilled Halibut</h5>
+                        <p class="cardsubhead">with Lemon-Dill Sauce</p>
+                        <button class="small borderbold bottommargin">Order Recipe</button>
+                    </div>
+                </div>
+                <div class="rectangleflexitem">
+                    <img class="cardimg" src="../Photos/Menus/pizza.jpg" alt="cheese pizza">
+                    <div class="cardtext">
+                        <h5 class="cardheader">Cheese Pizza</h5>
+                        <p class="cardsubhead">with Tomato Sauce and Thin Crust</p>
+                        <button class="small borderbold bottommargin">Order Recipe</button>
+                    </div>
+                </div>
+                <div class="rectangleflexitem">
+                    <img class="cardimg" src="../Photos/Menus/potatosalad.jpg" alt="potato salad">
+                    <div class="cardtext">
+                        <h5 class="cardheader">Potato Salad</h5>
+                        <p class="cardsubhead">with Sour Cream, Slaw and Garnishes</p>
+                        <button class="small borderbold bottommargin">Order Recipe</button>
+                    </div>
+                </div>
+                <div class="rectangleflexitem">
+                    <img class="cardimg" src="../Photos/Menus/skewers.jpg" alt="chicken skewers">
+                    <div class="cardtext">
+                        <h5 class="cardheader">Chicken Skewers</h5>
+                        <p class="cardsubhead">with Roasted Red Pepper Sauce</p>
+                        <button class="small borderbold bottommargin">Order Recipe</button>
+                    </div>
+                </div>
+                <div class="rectangleflexitem">
+                    <img class="cardimg" src="../Photos/Menus/fettucine.jpg" alt="fettucine">
+                    <div class="cardtext">
+                        <h5 class="cardheader">Fettucine</h5>
+                        <p class="cardsubhead">with Tomatoes and Pesto</p>
+                        <button class="small borderbold bottommargin">Order Recipe</button>
+                    </div>
+                </div>
+                <div class="rectangleflexitem">
+                    <img class="cardimg" src="../Photos/Menus/burrito.jpg" alt="burrito">
+                    <div class="cardtext">
+                        <h5 class="cardheader">Chicken Burrito</h5>
+                        <p class="cardsubhead">with Mixed Vegetables and Cheese</p>
+                        <button class="small borderbold bottommargin">Order Recipe</button>
+                    </div>
+                </div>
+                <div class="rectangleflexitem">
+                    <img class="cardimg" src="../Photos/Menus/burgerandfries.jpg" alt="burger and fries">
+                    <div class="cardtext">
+                        <h5 class="cardheader">Burger and Fries</h5>
+                        <p class="cardsubhead">with Garlic Aioli, Lettuce, Tomato and Cheese</p>
+                        <button class="small borderbold bottommargin">Order Recipe</button>
+                    </div>
+                </div>
+                <div class="rectangleflexitem">
+                    <img class="cardimg" src="../Photos/Menus/searedsalmon.jpg" alt="Seared Salmon">
+                    <div class="cardtext">
+                        <h5 class="cardheader">Seared Salmon</h5>
+                        <p class="cardsubhead">with Spinach Risotto</p>
+                        <button class="small borderbold bottommargin">Order Recipe</button>
+                    </div>
+                </div>
+                <div class="rectangleflexitem">
+                    <img class="cardimg" src="../Photos/Menus/sirloin.jpg" alt="grilled sirloin">
+                    <div class="cardtext">
+                        <h5 class="cardheader">Grilled Sirloin</h5>
+                        <p class="cardsubhead">with Mixed Vegetables</p>
+                        <button class="small borderbold bottommargin">Order Recipe</button>
+                    </div>
+                </div>
+                <div class="rectangleflexitem">
+                    <img class="cardimg" src="../Photos/Menus/hamburgernadfries.jpg" alt="hamburger and fries">
+                    <div class="cardtext">
+                        <h5 class="cardheader">Hamburger and Fries</h5>
+                        <p class="cardsubhead">with Garlic Aioli and Fried Egg</p>
+                        <button class="small borderbold bottommargin">Order Recipe</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="imagebanner">
+            <div class="bannercontent">
+                <h1 class="heroheader bold">Get Started</h1>
+                <div class="xlargeheading">Discover an easy way to cook healthy, delicious meals.</div>
+                <button class="small red">Sign Up</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footertop_flexcontainer">
+            <div class="footerflexitem">
+                <h4>OUR COMPANY</h4>
+                <p>Our Story</p>
+                <p>Careers</p>
+                <p>Press</p>
+                <p>Terms & Conditions</p>
+            </div>
+            <div class="footerflexitem">
+                <h4>HELP</h4>
+                <p>FAQ</p>
+                <p>Contact</p>
+            </div>
+            <div class="footerflexitem">
+                <h4>DOWNLOAD OUR APP</h4>
+                <p>Manage your deliveries anytime, anywhere.</p>
+                <div class="applinks">
+                    <img class="appimg" src="../Photos/Homepage/appstore.png" alt="App Store">
+                    <img class="appimg" src="../Photos/Homepage/googleplay.png" alt="Google Play">
+                </div>
+            </div>
+        </div>
+        <div class="footerbottom_flexcontainer">
+            <p>© Chef’s Choice</p>
+            <div></div>
+            <div>
+                <img class="socialicon" src="../Photos/Homepage/social-fb.png" alt="Facebook">
+                <img class="socialicon" src="../Photos/Homepage/social-insta.png" alt="Instagram">
+                <img class="socialicon" src="../Photos/Homepage/social-twitter.png" alt="Twitter">
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

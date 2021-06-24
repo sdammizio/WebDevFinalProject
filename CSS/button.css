@@ -47,6 +47,18 @@
     box-shadow: rgba(99, 99, 99, 0.5) 0px 0px 8px 0px;
 }
 
+.extralarge {
+    padding:11px 130px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    border:none;
+    font-size: 16px;
+    text-align: center;
+    border:none;
+    box-shadow: rgba(99, 99, 99, 0.5) 0px 0px 8px 0px;
+}
+
 .leftmargin {
     margin-left: 16px;
 }
@@ -80,3 +92,11 @@ button.borderbold:hover {
     background-color: #047A46;
     color: white;
 }
+
+
+
+@media (max-width:700px) {
+    .extralarge {
+        padding: 10px 90px;   
+    }
+    }

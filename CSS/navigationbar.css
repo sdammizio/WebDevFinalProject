@@ -110,6 +110,24 @@ ul {
     text-decoration-color: #45542D;
 }
 
+a.button {
+  border-radius: 4px;
+    padding:11px 20px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    border:none;
+    font-size: 16px;
+    text-align: center;
+    border:none;
+    box-shadow: rgba(99, 99, 99, 0.5) 0px 0px 8px 0px;
+    background-color: white;
+    border: 1px solid #047A46;
+    color: #047A46;
+    margin-right: 16px;
+    margin-left: 16px;
+    text-decoration: none;
+}
+
 /* Hamburger Menu for Responsive (Tablet/Mobile) Nav Bar */
 
 .topnav #myLinks {

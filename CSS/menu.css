@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+.contentblockwhite{
+    background-color: white;
+    text-align: center;
+    padding: 40px 60px 0px 60px;
+}
+h2 {
+    font-size: 30px;
+}
+.datepicker {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+h1.datetext {
+    border: 3px solid #047A46;
+    border-radius: 4px;
+    color: #047A46;
+    background-color: white;
+    padding: 10px 60px;
+    margin: 0px 20px 0px 20px;
+}
+
+.rectangularflexcontainer {
+    margin: 0px 5px 30px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.rectangleflexitem {
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px 10px 20px 10px;
+}
+
+.rectangleflexitem:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 3.95px 3.95px 4.6px;
+}
+
+
+.cardimg {
+    max-height: 280px;
+    border-radius: 4px;
+}
+
+.cardtext {
+    margin-left: 16px;
+    text-align: left;
+}
+
+.cardheader {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    color: #2C351D;
+}
+
+.cardsubhead{
+    font-size: 12px;
+}
+
+.imagebanner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannercontent{
+    display: flex;
+    flex-direction: column;
+    width: 33%;  
+    align-items: center;
+    justify-content: center;
+    padding:30px 30px 50px 30px;
+}
+
+h1.heroheader {
+    font-size: 45px;
+    margin: 50px 0px 10px 0px;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.xlargeheading {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*Responsive Tablet/Mobile */
+
+@media (max-width:950px){
+    .bannercontent{
+        width: 70%;  
+    }
+  }
+
+  @media (min-width:701px) AND (max-width:1500px) {
+    .contentblockwhite{
+        padding: 16px;
+    }
+    
+    .rectangleflexitem {
+        margin: 10px;
+    }
+  }
+
+  @media (max-width:700px) {
+    .rectangleflexitem {
+        margin: 16px;
+    }
+
+    .rectangularflexcontainer {
+        margin: none;
+        flex-direction: column;
+        align-items: space-evenly;
+    }
+    .contentblockwhite{
+        padding: 16px;
+    }
+    }
