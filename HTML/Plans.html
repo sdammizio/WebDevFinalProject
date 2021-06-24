@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="../CSS/homepage.css" />
+    <link rel="stylesheet" href="../CSS/Plans.css" />
     <link rel="stylesheet" href="../CSS/button.css">
     <link rel="stylesheet" href="../CSS/navigationbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,7 +51,7 @@
             <div id="myLinks">
                 <a class="nav2" href="../HTML/menu.html">Menu</a>
                 <a class="nav2" href="../HTML/Plans.html">Our Plans</a>
-                <a class="nav2" href="../HTML//HowitWorks.html">How it Works</a>
+                <a class="nav2" href="../HTML/HowitWorks.html">How it Works</a>
                 <a class="nav2" href="../HTML/login.html"><b>LOGIN</b></a>
             </div>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -69,40 +69,74 @@
     </header>
 
     <main>
-
-        <section class="hero">
-            <div class="bannercontent">
-                <h1 class="heroheader bold">Make Dinner Easy!</h1>
-                <div class="xlargeheading">Get farm-fresh ingredients and delicous recipes delivered to your door.</div>
-                <button class="large red">View Our Plans</button>
-            </div>
+        <section class="contentblockwhite">
+            <h2>Our Plans</h2>
         </section>
 
         <section class="contentblockwhite">
-            <h2>How It Works</h2>
-            <div class="roundflexcontainer">
-                <div class="roundflexitem">
-                    <img class="roundimg" src="../Photos/Homepage/recipe.png" alt="recipe page">
-                    <h3 class="bold">Choose your meals</h3>
-                    <p>Select meals from created by our culinary team based on your food preferences. </p>
+            <div class="flexcontainer_overall">
+
+                <div class="flexcontainer_largeheading">
+                    <h3>Create your plan</h3>
                 </div>
-                <div class="roundflexitem">
-                    <img class="roundimg" src="../Photos/Homepage/computer.png" alt="person on computer">
-                    <h3 class="bold">Create your box</h3>
-                    <p>Suit your lifestyle with a variety of options, like adding bread to your meal. </p>
+
+                <div class="flexcontainer_columns">
+                    <div class="flexcontainer_column_choose">
+                        <div class="flexcontainer_smallheading">
+                            <h4>1.Choose your preference</h3>
+                        </div>
+                        <div class="choicegrid">
+                            <div class="choiceitem">
+                                <img class="choiceimg" src="../Photos/Plans/steak.png" alt="steak">
+                                <p class="bold small">Classic</p>
+                            </div>
+                            <div class="choiceitem">
+                                <img class="choiceimg" src="../Photos/Plans/familypot.png" alt="pot">
+                                <p class="bold small">Family Friendly</p>
+                            </div>
+                            <div class="choiceitem">
+                                <img class="choiceimg" src="../Photos/Plans/hearthealth.png" alt="heart">
+                                <p class="bold small">Clean (Low Carb)</p>
+                            </div>
+                            <div class="choiceitem">
+                                <img class="choiceimg" src="../Photos/Plans/veggie.png" alt="vegetarian">
+                                <p class="bold small">Vegetarian</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flexcontainer_column_choose">
+                        <div class="flexcontainer_smallheading">
+                            <h4>2. Select plan size</h3>
+                        </div>
+                        <div class="formgrid">
+                            <div class="formitem">
+                                <label for="people">Number of people</label>
+                                <input name="number" required="required" type="number"/>
+                            </div>
+                            <div class="formitem">
+                                <label for="recipes">Recipes per week</label>
+                                <input name="number" required="required" type="number"/>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="roundflexitem">
-                    <img class="roundimg" src="../Photos/Homepage/delivery.png" alt="delivery person">
-                    <h3 class="bold">Schedule your delivery</h3>
-                    <p>Select a delivery time that works for you. </p>
-                </div>
-                <div class="roundflexitem">
-                    <img class="roundimg" src="../Photos/Homepage/cooking.png" alt="person cooking">
-                    <h3 class="bold">Cook your meal</h3>
-                    <p>Follow our easy instructions to create a delicious, nutritious meal at home. </p>
+                
+                <div class="flexcontainer_4">
+                    <p class="small bold">Classic</p>
+                    <div class="pricgridcontainer">
+                        <div class="pricegrid">
+                            <p class="small">Price per serving</p>
+                            <p class="redtext smalltext">$4.82</p>
+                           
+                        </div>
+                        <div class="pricegrid"></div>
+                            <p class="small">Shipping</p>
+                            <p class="redtext smalltext">FREE</p>
+                        </div>
+                    </div>
+                    <button class="large green">Select this plan</button>
                 </div>
             </div>
-            <button class="small green">Learn More</button>
         </section>
 
         <section class="contentblockgrey">
@@ -136,35 +170,6 @@
                 <img class="arrow" src="../Photos/Homepage/arrowright.png">
             </div>
             <button class="small green bottomextramargin">View All</button>
-        </section>
-
-        <section class="contentblockwhite">
-            <h2>What Our Customers Say</h2>
-            <div class="quoteflexcontainer">
-                <div class="quoteflexitem">
-                    <img class="quoteimg" src="../Photos/Homepage/quotes.png">
-                    <h6>Susan said</h6>
-                    <p>Chef’s Choice has helped me actually enjoy cooking again. I have saved so much time after work by
-                        no longer having to go to the grocery store. I can just come home and get cooking! </p>
-                    <img class="starsimg" src="../Photos/Homepage/stars.png">
-                </div>
-                <div class="quoteflexitem">
-                    <img class="quoteimg" src="../Photos/Homepage/quotes.png">
-                    <h6>Tim said</h6>
-                    <p>My wife and daughter love the meals and I love that I can save time and money on groceries. No
-                        more wasted food- we just buy what we need for each meal and the food is delicious! </p>
-                    <img class="starsimg" src="../Photos/Homepage/stars.png">
-                </div>
-            </div>
-            <button class="small green bottoextrammargin">View More</button>
-        </section>
-
-        <section class="imagebanner">
-            <div class="bannercontent">
-                <h1 class="heroheader bold">Get Started</h1>
-                <div class="xlargeheading">Discover an easy way to cook healthy, delicious meals.</div>
-                <button class="small red">Sign Up</button>
-            </div>
         </section>
 
     </main>

@@ -114,9 +114,6 @@ h1.heroheader {
   }
 
   @media (min-width:701px) AND (max-width:1500px) {
-    .contentblockwhite{
-        padding: 16px;
-    }
     
     .rectangleflexitem {
         margin: 10px;
