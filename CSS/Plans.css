@@ -2,10 +2,19 @@ body {
     font-family: Arial, Helvetica, sans-serif;  
 }
 
-.contentblockwhite{
+.contentblockwhite_1{
     background-color: white;
     text-align: center;
-    padding: 40px;
+    padding: 40px 40px 10px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contentblockwhite_2{
+    background-color: white;
+    text-align: center;
+    padding: 0px 40px 40px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,11 +45,17 @@ h2 {
     justify-content: center;
     flex-wrap: wrap;
 }
+.flexcontainer_columns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
 .flexcontainer_column_choose {
     margin: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
@@ -58,6 +73,8 @@ h2 {
     flex-direction: row;
     align-items: space-evenly;
     justify-content: flex-start;
+    max-width: 50%;
+    flex-wrap: wrap;
 }
 
 .choiceitem {
@@ -67,7 +84,16 @@ h2 {
     justify-content: center;
     border: 2px solid #45542D;
     border-radius: 4px;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
 }
+
+.choiceitem:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 3.95px 3.95px 5.6px;
+}
+
 h4 {
     color: #6E6C6C;
     font-size: 18px;
@@ -141,6 +167,11 @@ p.smalltext {
 label {
     color: #6E6C6C;
     font-size: 14px;
+    margin-right: 5px;
+}
+
+input {
+    max-width: 30px;
 }
 
 
@@ -226,9 +257,6 @@ label {
   }
 
   @media (max-width:700px) {
-    .rectangleflexitem {
-        margin: 16px;
-    }
     .arrow {
         display:none;
     }
@@ -238,7 +266,41 @@ label {
     .rectangularflexcontainer {
         margin: none;
         flex-direction: column;
-        align-items: space-evenly;
     }
     
+    .rectangleflexitem {
+        margin: 16px;
+        max-width: 90%;
     }
+    .cardimg {
+        max-width: -webkit-fill-available;
+    }    
+    .flexcontainer_overall{
+        margin:20px;
+        padding:5px;
+    }
+}
+
+    @media (max-width:996px){
+        .flexcontainer_columns {
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width:811px) {
+        .flexcontainer_columns {
+            flex-direction: column;
+        }
+        .choicegrid {
+            max-width: 70%;
+        }
+    }
+    @media (max-width:577px) {
+        .flexcontainer_columns {
+            flex-direction: column;
+        }
+        .choicegrid {
+            max-width: none;
+        }
+    }
+

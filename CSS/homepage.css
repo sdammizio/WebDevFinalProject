@@ -13,7 +13,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 80vh;
-    width: 100vw;
     position: relative;
     color: #000000;
  
@@ -186,7 +185,6 @@ h6 {
         justify-content: center;
         align-items: center;
         height: 40vh;
-        width: 100vw;
         position: relative;
         color: #000000;
 }
@@ -238,7 +236,16 @@ h6 {
   @media (max-width:700px) {
     .rectangleflexitem {
         margin: 16px;
+        max-width: 90%;
     }
+    .cardimg {
+        max-width: -webkit-fill-available;
+    }   
+    
+    .roundimg {
+        max-width: -webkit-fill-available;
+    }
+    
     .arrow {
         display:none;
     }
@@ -271,7 +278,7 @@ h6 {
     }
     .roundflexcontainer {
         flex-direction: column;
-        justify-content: row;
+        justify-content: center;
         justify-items: center;
     }
 
@@ -279,4 +286,5 @@ h6 {
         max-width: 100%;
         margin:20px;
     }
-    }
+}
+    
