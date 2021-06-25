@@ -1,0 +1,105 @@
+.small {
+    border-radius: 4px;
+    padding:11px 20px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    border:none;
+    font-size: 16px;
+    text-align: center;
+    border:none;
+    box-shadow: rgba(99, 99, 99, 0.5) 0px 0px 8px 0px;
+}
+
+.red {
+    background-color: #FF634C;
+    color: white;
+}
+
+.green {
+    background-color:#047A46 ;
+    color: white;
+}
+
+.borderbold {
+    font-weight: bold;
+    color: #45542D;
+    border: 1px solid #45542D;
+    background-color: white;
+    font-size: 14px;
+    padding:5px 15px;
+}
+
+.border {
+    background-color: white;
+    border: 1px solid #047A46;
+    color: #047A46;
+}
+
+.large {
+    padding:11px 80px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    border:none;
+    font-size: 16px;
+    text-align: center;
+    border:none;
+    box-shadow: rgba(99, 99, 99, 0.5) 0px 0px 8px 0px;
+}
+
+.extralarge {
+    padding:11px 130px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    border:none;
+    font-size: 16px;
+    text-align: center;
+    border:none;
+    box-shadow: rgba(99, 99, 99, 0.5) 0px 0px 8px 0px;
+}
+
+.leftmargin {
+    margin-left: 16px;
+}
+
+.rightmargin {
+    margin-right: 16px;
+}
+
+.bottommargin {
+    margin-bottom: 16px;
+}
+
+.bottoextrammargin {
+    margin-bottom: 30px;
+}
+
+button.red:hover {
+    background-color: #d6533f;
+}
+
+button.border:hover {
+    background-color: #047A46;
+    color: white;
+}
+
+button.green:hover {
+    background-color: #025330;
+}
+
+button.borderbold:hover {
+    background-color: #047A46;
+    color: white;
+}
+
+
+
+@media (max-width:700px) {
+    .extralarge {
+        padding: 10px 80px;   
+    }
+    .large {
+        padding:11px 20px;
+    }
+    }
