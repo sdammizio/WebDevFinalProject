@@ -2,5 +2,5 @@
 
 Projects
 
-[a relative link](homepage.html)
+[Chef's Choice Meal Delivery Platform](Code/HTML/homepage.html)
 
