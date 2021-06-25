@@ -2,10 +2,19 @@ body {
     font-family: Arial, Helvetica, sans-serif;  
 }
 
-.contentblockwhite{
+.contentblockwhite_1{
     background-color: white;
     text-align: center;
-    padding: 40px;
+    padding: 40px 40px 10px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contentblockwhite_2{
+    background-color: white;
+    text-align: center;
+    padding: 0px 40px 40px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -248,9 +257,6 @@ input {
   }
 
   @media (max-width:700px) {
-    .rectangleflexitem {
-        margin: 16px;
-    }
     .arrow {
         display:none;
     }
@@ -260,15 +266,41 @@ input {
     .rectangularflexcontainer {
         margin: none;
         flex-direction: column;
-        align-items: space-evenly;
     }
     
+    .rectangleflexitem {
+        margin: 16px;
+        max-width: 90%;
     }
+    .cardimg {
+        max-width: -webkit-fill-available;
+    }    
+    .flexcontainer_overall{
+        margin:20px;
+        padding:5px;
+    }
+}
 
-    @media (max-width:988px) AND (min-width:812px){
+    @media (max-width:996px){
         .flexcontainer_columns {
             flex-direction: column;
         }
     }
 
-    
+    @media (max-width:811px) {
+        .flexcontainer_columns {
+            flex-direction: column;
+        }
+        .choicegrid {
+            max-width: 70%;
+        }
+    }
+    @media (max-width:577px) {
+        .flexcontainer_columns {
+            flex-direction: column;
+        }
+        .choicegrid {
+            max-width: none;
+        }
+    }
+
