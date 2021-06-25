@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../CSS/homepage.css" />
+    <link rel="stylesheet" href="../CSS/button.css">
+    <link rel="stylesheet" href="../CSS/navigationbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <a class="logo" href="../HTML/homepage.html" class="active">
+                <div class="logocontainer">
+                    <img class="logo" src="../Photos/Homepage/logo.png" alt="logo">
+                </div>
+            </a>
+            <ul class="middle-nav">
+                <li><a class="nav1" href="../HTML/menu.html">Menus</a></li>
+                <li><a class="nav1" href="../HTML/Plans.html">Our Plans</a></li>
+                <li><a class="nav1" href="../HTML/HowitWorks.html">How it Works</a></li>
+            </ul>
+            <div class="loginbuttons">
+                <button class="small red">Sign Up</button>
+                <a class="button" href="../HTML/login.html">Log In</a>
+            </div>
+        </div>
+
+        <!--Nav Bar for Tablet/Mobile-->
+        <div class="navbar2">
+            <a class="nav2" href="../HTML/homepage.html" class="active">
+                <div class="logocontainer">
+                    <img class="logo" src="../Photos/Homepage/logo.png" alt="logo">
+                </div>
+            </a>
+            <div id="myLinks">
+                <a class="nav2" href="../HTML/menu.html">Menu</a>
+                <a class="nav2" href="../HTML/Plans.html">Our Plans</a>
+                <a class="nav2" href="../HTML//HowitWorks.html">How it Works</a>
+                <a class="nav2" href="../HTML/login.html"><b>LOGIN</b></a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fas fa-bars fa-2x"></i>
+            </a>
+        </div>
+        </div>
+        <!---->
+
+        <section class="promobanner">
+            <div>
+                <p>Save $12.99 when you order your first box! <span class="underline">Learn More</span></p>
+            </div>
+        </section>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="bannercontent">
+                <h1 class="heroheader bold">Make Dinner Easy!</h1>
+                <div class="xlargeheading">Get farm-fresh ingredients and delicous recipes delivered to your door.</div>
+                <button class="large red">View Our Plans</button>
+            </div>
+        </section>
+
+        <section class="contentblockwhite">
+            <h2>How It Works</h2>
+            <div class="roundflexcontainer">
+                <div class="roundflexitem">
+                    <img class="roundimg" src="../Photos/Homepage/recipe.png" alt="recipe page">
+                    <h3 class="bold">Choose your meals</h3>
+                    <p>Select meals from created by our culinary team based on your food preferences. </p>
+                </div>
+                <div class="roundflexitem">
+                    <img class="roundimg" src="../Photos/Homepage/computer.png" alt="person on computer">
+                    <h3 class="bold">Create your box</h3>
+                    <p>Suit your lifestyle with a variety of options, like adding bread to your meal. </p>
+                </div>
+                <div class="roundflexitem">
+                    <img class="roundimg" src="../Photos/Homepage/delivery.png" alt="delivery person">
+                    <h3 class="bold">Schedule your delivery</h3>
+                    <p>Select a delivery time that works for you. We have flexible hours to serve you.  </p>
+                </div>
+                <div class="roundflexitem">
+                    <img class="roundimg" src="../Photos/Homepage/cooking.png" alt="person cooking">
+                    <h3 class="bold">Cook your meal</h3>
+                    <p>Follow our easy instructions to create a delicious, nutritious meal at home. </p>
+                </div>
+            </div>
+            <button class="small green">Learn More</button>
+        </section>
+
+        <section class="contentblockgrey">
+            <h2>On the Menu This Week</h2>
+            <div class="rectangularflexcontainer">
+                <img class="arrow" src="../Photos/Homepage/arrowleft.png">
+                <div class="rectangleflexitem">
+                    <img class="cardimg" src="../Photos/Homepage/eggrisotto.jpg" alt="egg risotto">
+                    <div class="cardtext">
+                        <h5 class="cardheader">Egg and Cucumber Risotto</h5>
+                        <p class="cardsubhead">with Aged Cheddar and Cilantro</p>
+                        <button class="small borderbold bottommargin">Order Recipe</button>
+                    </div>
+                </div>
+                <div class="rectangleflexitem">
+                    <img class="cardimg" src="../Photos/Homepage/shortribs.jpg" alt="short ribs">
+                    <div class="cardtext">
+                        <h5 class="cardheader">Barbeque Short Ribs</h5>
+                        <p class="cardsubhead">with Mixed Vegetables</p>
+                        <button class="small borderbold bottommargin">Order Recipe</button>
+                    </div>
+                </div>
+                <div class="rectangleflexitem">
+                    <img class="cardimg" src="../Photos/Homepage/berrysalad.jpg" alt="berry salad">
+                    <div class="cardtext">
+                        <h5 class="cardheader">Summer Berry Salad</h5>
+                        <p class="cardsubhead">with Strawberries and Pecans</p>
+                        <button class="small borderbold bottommargin">Order Recipe</button>
+                    </div>
+                </div>
+                <img class="arrow" src="../Photos/Homepage/arrowright.png">
+            </div>
+            <button class="small green bottomextramargin">View All</button>
+        </section>
+
+        <section class="contentblockwhite">
+            <h2>What Our Customers Say</h2>
+            <div class="quoteflexcontainer">
+                <div class="quoteflexitem">
+                    <img class="quoteimg" src="../Photos/Homepage/quotes.png">
+                    <h6>Susan said</h6>
+                    <p>Chef’s Choice has helped me actually enjoy cooking again. I have saved so much time after work by
+                        no longer having to go to the grocery store. I can just come home and get cooking! </p>
+                    <img class="starsimg" src="../Photos/Homepage/stars.png">
+                </div>
+                <div class="quoteflexitem">
+                    <img class="quoteimg" src="../Photos/Homepage/quotes.png">
+                    <h6>Tim said</h6>
+                    <p>My wife and daughter love the meals and I love that I can save time and money on groceries. No
+                        more wasted food- we just buy what we need for each meal and the food is delicious! </p>
+                    <img class="starsimg" src="../Photos/Homepage/stars.png">
+                </div>
+            </div>
+            <button class="small green bottoextrammargin">View More</button>
+        </section>
+
+        <section class="imagebanner">
+            <div class="bannercontent">
+                <h1 class="heroheader bold">Get Started</h1>
+                <div class="xlargeheading">Discover an easy way to cook healthy, delicious meals.</div>
+                <button class="small red">Sign Up</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footertop_flexcontainer">
+            <div class="footerflexitem">
+                <h4>OUR COMPANY</h4>
+                <p>Our Story</p>
+                <p>Careers</p>
+                <p>Press</p>
+                <p>Terms & Conditions</p>
+            </div>
+            <div class="footerflexitem">
+                <h4>HELP</h4>
+                <p>FAQ</p>
+                <p>Contact</p>
+            </div>
+            <div class="footerflexitem">
+                <h4>DOWNLOAD OUR APP</h4>
+                <p>Manage your deliveries anytime, anywhere.</p>
+                <div class="applinks">
+                    <img class="appimg" src="../Photos/Homepage/appstore.png" alt="App Store">
+                    <img class="appimg" src="../Photos/Homepage/googleplay.png" alt="Google Play">
+                </div>
+            </div>
+        </div>
+        <div class="footerbottom_flexcontainer">
+            <p>© Chef’s Choice</p>
+            <div></div>
+            <div>
+                <img class="socialicon" src="../Photos/Homepage/social-fb.png" alt="Facebook">
+                <img class="socialicon" src="../Photos/Homepage/social-insta.png" alt="Instagram">
+                <img class="socialicon" src="../Photos/Homepage/social-twitter.png" alt="Twitter">
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

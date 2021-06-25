@@ -1,0 +1,280 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+
+/* Hero Image Area */
+
+.hero{
+    display: flex;
+    background-image: url("../Photos/Homepage/hero.jpg"); 
+    background-size:cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    position: relative;
+    color: #000000;
+ 
+}
+
+.bannercontent{
+    display: flex;
+    flex-direction: column;
+    width: 33%;  
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+h1.heroheader {
+    font-size: 45px;
+    margin: 50px 0px 10px 0px;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.xlargeheading {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Content Block 1- How it Works */
+
+.contentblockwhite{
+    background-color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.roundflexcontainer {
+    margin: 40px 5px 30px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.roundflexitem {
+    max-width: 15%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.roundimg {
+    max-width: 300px;
+}
+
+h3 {
+    font-size: 18px;
+    margin: 20px 0px 5px 0px;
+}
+
+/* Content Block 2- On the Menu */
+
+.contentblockgrey{
+    background-color: #EBEBEB;
+    text-align: center;
+    padding: 50px;
+    }
+
+.rectangularflexcontainer {
+    margin: 40px 5px 30px 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.rectangleflexitem {
+    background-color: white;
+    border: none;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.rectangleflexitem:hover {
+    box-shadow: rgba(0, 0, 0, 0.15) 3.95px 3.95px 4.6px;
+}
+
+
+.cardimg {
+    max-height: 280px;
+    border-radius: 4px;
+}
+
+.arrow {
+    max-width: 50px;
+}
+
+.cardtext {
+    margin-left: 16px;
+    text-align: left;
+}
+
+.cardheader {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    color: #2C351D;
+}
+
+.cardsubhead{
+    font-size: 12px;
+}
+
+/* Content Block 3- What Our Customers Say */
+
+.quoteflexcontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    margin-top: 80px;
+
+}
+
+.quoteflexitem {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+}
+
+.quoteimg {
+    max-width: 30px;
+}
+
+.starsimg {
+    margin-top: 30px;
+    max-width: 100px;
+}
+
+h6 {
+    font-size: 16px;
+    margin: 10px;
+}
+
+/* Image Banner Area */
+
+.imagebanner {
+        display: flex;
+        background-image: url("../Photos/Homepage/bannerimage.jpg"); 
+        background-size:cover;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+        position: relative;
+        color: #000000;
+}
+
+
+/*Responsive Tablet/Mobile */
+
+@media (max-width:950px){
+    .hero{
+        background-image: url("../Photos/Homepage/heromobile.jpg"); 
+    }
+    .bannercontent{
+        width: 70%;  
+    }
+  }
+
+  @media (min-width:701px) AND (max-width:1500px) {
+    .contentblockwhite{
+        padding: 16px;
+    }
+    .roundflexitem {
+        max-width: 40%;
+        padding: 5px;
+        margin:10px;
+    }
+    .roundimg {
+        max-width: -webkit-fill-available;
+        margin: 10px;
+    }
+    .contentblockgrey{
+        padding: 10px;
+    }
+    .cardimg {
+        max-height: 480px;
+    }
+    .rectangularflexcontainer {
+        margin: none;
+        flex-direction: column;
+        align-items: space-evenly;
+    }
+    .rectangleflexitem {
+        margin: 10px;
+    }
+    .arrow {
+        display:none;
+    }
+  }
+
+  @media (max-width:700px) {
+    .rectangleflexitem {
+        margin: 16px;
+    }
+    .arrow {
+        display:none;
+    }
+    .contentblockgrey{
+        padding: 16px;
+    }
+    .rectangularflexcontainer {
+        margin: none;
+        flex-direction: column;
+        align-items: space-evenly;
+    }
+    .quoteflexcontainer {
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 80px;
+        margin-top: 80px;
+    }
+    .quoteflexitem {
+        max-width: 60%;
+        margin: 30px;
+    }
+    .starsimg {
+        margin-top: 10px;
+    }
+    .imagebanner {
+        background-image: url("../Photos/Homepage/bannerimagemobile.jpg"); 
+    }
+    .contentblockwhite{
+        padding: 16px;
+    }
+    .roundflexcontainer {
+        flex-direction: column;
+        justify-content: row;
+        justify-items: center;
+    }
+
+    .roundflexitem {
+        max-width: 100%;
+        margin:20px;
+    }
+    }
