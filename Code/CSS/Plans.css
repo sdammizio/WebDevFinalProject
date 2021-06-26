@@ -162,6 +162,7 @@ p.smalltext {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 label {
@@ -171,7 +172,9 @@ label {
 }
 
 input {
-    max-width: 30px;
+    max-width: 40px;
+    border: 2px solid #45542D; 
+    border-radius: 4px;
 }
 
 
@@ -189,7 +192,7 @@ input {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+
 }
 
 .rectangleflexitem {
@@ -201,6 +204,8 @@ input {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin: 5px;
+    max-width: 30%;
 }
 
 .rectangleflexitem:hover {
@@ -209,7 +214,7 @@ input {
 
 
 .cardimg {
-    max-height: 280px;
+    width: 100%;
     border-radius: 4px;
 }
 
@@ -236,25 +241,6 @@ input {
 
 /*Responsive Tablet/Mobile */
 
-  @media (min-width:701px) AND (max-width:1500px) {
-    .contentblockgrey{
-        padding: 10px;
-    }
-    .cardimg {
-        max-height: 480px;
-    }
-    .rectangularflexcontainer {
-        margin: none;
-        flex-direction: column;
-        align-items: space-evenly;
-    }
-    .rectangleflexitem {
-        margin: 10px;
-    }
-    .arrow {
-        display:none;
-    }
-  }
 
   @media (max-width:700px) {
     .arrow {

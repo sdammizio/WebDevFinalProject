@@ -74,7 +74,7 @@ h2 {
 }
 
 .roundimg {
-    max-width: 300px;
+    max-width: -webkit-fill-available;
 }
 
 h3 {
@@ -96,7 +96,6 @@ h3 {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    flex-wrap: wrap;
 }
 
 .rectangleflexitem {
@@ -108,6 +107,8 @@ h3 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin: 5px;
+    max-width: 30%;
 }
 
 .rectangleflexitem:hover {
@@ -116,7 +117,7 @@ h3 {
 
 
 .cardimg {
-    max-height: 280px;
+    width: 100%;
     border-radius: 4px;
 }
 
@@ -192,7 +193,7 @@ h6 {
 
 /*Responsive Tablet/Mobile */
 
-@media (max-width:950px){
+@media (max-width:961px){
     .hero{
         background-image: url("../Photos/Homepage/heromobile.jpg"); 
     }
@@ -201,7 +202,7 @@ h6 {
     }
   }
 
-  @media (min-width:701px) AND (max-width:1500px) {
+  @media (min-width:481px) AND (max-width:960px) {
     .contentblockwhite{
         padding: 16px;
     }
@@ -211,52 +212,12 @@ h6 {
         margin:10px;
     }
     .roundimg {
-        max-width: -webkit-fill-available;
         margin: 10px;
-    }
-    .contentblockgrey{
-        padding: 10px;
-    }
-    .cardimg {
-        max-height: 480px;
-    }
-    .rectangularflexcontainer {
-        margin: none;
-        flex-direction: column;
-        align-items: space-evenly;
-    }
-    .rectangleflexitem {
-        margin: 10px;
-    }
-    .arrow {
-        display:none;
     }
   }
 
-  @media (max-width:700px) {
-    .rectangleflexitem {
-        margin: 16px;
-        max-width: 90%;
-    }
-    .cardimg {
-        max-width: -webkit-fill-available;
-    }   
+  @media (max-width:480px) {
     
-    .roundimg {
-        max-width: -webkit-fill-available;
-    }
-    
-    .arrow {
-        display:none;
-    }
-    .contentblockgrey{
-        padding: 16px;
-    }
-    .rectangularflexcontainer {
-        margin: none;
-        flex-direction: column;
-        align-items: space-evenly;
-    }
     .quoteflexcontainer {
         flex-direction: column;
         justify-content: center;
@@ -287,4 +248,32 @@ h6 {
         margin:20px;
     }
 }
+
+@media (max-width:700px) {
+    .arrow {
+        display:none;
+    }
+    .contentblockgrey{
+        padding: 16px;
+    }
+    .rectangularflexcontainer {
+        margin: none;
+        flex-direction: column;
+    }
+    
+    .rectangleflexitem {
+        margin: 16px;
+        max-width: 90%;
+    }
+    .cardimg {
+        max-width: -webkit-fill-available;
+    }    
+}
+
+@media (max-width:960px) {
+.imagebanner {
+    background-image: url("../Photos/Homepage/bannerimagemobile.jpg"); 
+}
+}
+
     
