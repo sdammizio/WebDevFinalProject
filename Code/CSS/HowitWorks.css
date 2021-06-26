@@ -74,11 +74,11 @@ h2 {
     padding:50px;
 }
 .FAQgrid_flexbox {
-    max-width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    max-width: 50%;
     flex-wrap: wrap;
 }
 .FAQgrid_item {
@@ -87,7 +87,7 @@ h2 {
     justify-content: center;
     align-items: center;
     padding: 50px;
-    margin:30px;
+    margin:20px;
     background-color: white;
     border: none;
     border-radius: 4px;
@@ -107,19 +107,6 @@ h2 {
 /*Responsive Tablet/Mobile */
 
 @media (max-width:700px) {
- .FAQgrid_flexbox{
-    flex-direction:column;
-    justify-content: center;
- }
- .FAQgrid {
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     padding:0px;
- }
-.FAQgrid_flexbox {
-    flex-wrap: nowrap;
-}
 .textflexcontainer {
     max-width: none;
 }
@@ -154,9 +141,6 @@ h2 {
     }
 }
 @media (min-width:1256px) AND (max-width:1516px) {
-    .FAQgrid_flexbox {
-        max-width: none;
-    }
     .textflexcontainer {
         max-width: none;
     }
@@ -164,4 +148,22 @@ h2 {
         max-width: none;
     }
 }
+
+@media (max-width:480px) {
+    .FAQgrid_flexbox{
+        flex-direction:column;
+        justify-content: center;
+     }
+     .FAQgrid {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         padding:0px;
+     }
+    .FAQgrid_flexbox {
+        flex-wrap: nowrap;
+    }
+}
+
+
 
