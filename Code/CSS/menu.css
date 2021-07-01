@@ -1,3 +1,6 @@
+.html {
+    font-size: 62.5%;
+  }
 body {
     font-family: Arial, Helvetica, sans-serif;  
 }
@@ -9,6 +12,7 @@ body {
 }
 h2 {
     font-size: 30px;
+    font-size: 1.875rem;
 }
 .datepicker {
     display: flex;
@@ -17,13 +21,14 @@ h2 {
     justify-content: center;
 }
 
-h1.datetext {
+h2.datetext {
     border: 3px solid #047A46;
     border-radius: 4px;
     color: #047A46;
     background-color: white;
     padding: 10px 60px;
     margin: 0px 20px 0px 20px;
+
 }
 
 .rectangularflexcontainer {
@@ -65,6 +70,7 @@ h1.datetext {
 
 .cardheader {
     font-size: 18px;
+    font-size: 1.125rem;
     font-weight: normal;
     margin-bottom: 5px;
     color: #2C351D;
@@ -72,6 +78,7 @@ h1.datetext {
 
 .cardsubhead{
     font-size: 12px;
+    font-size: 0.75rem;
 }
 
 .imagebanner {
@@ -90,8 +97,9 @@ h1.datetext {
     padding:30px 30px 50px 30px;
 }
 
-h1.heroheader {
+h3.heroheader {
     font-size: 45px;
+    font-size: 2.8125rem;
     margin: 50px 0px 10px 0px;
     text-align: center;
 }
@@ -102,6 +110,7 @@ h1.heroheader {
 
 .xlargeheading {
     font-size: 20px;
+    font-size: 1.25rem;
     text-align: center;
     margin-bottom: 30px;
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Homepage</title>
@@ -25,10 +25,13 @@
 
 <body>
     <header>
+        <a class="skip-link" href='#main'>Skip to Content</a>
+
+        <!--Nav Bar for Desktop-->
         <div class="navbar">
-            <a class="logo" href="../HTML/homepage.html" class="active">
+            <a class="logo active" href="../HTML/homepage.html" title="Homepage link">
                 <div class="logocontainer">
-                    <img class="logo" src="../Photos/Homepage/logo.png" alt="logo">
+                    <img class="logo" src="../Photos/Homepage/logo.png" alt="Chef's Choice logo">
                 </div>
             </a>
             <ul class="middle-nav">
@@ -38,27 +41,26 @@
             </ul>
             <div class="loginbuttons">
                 <button class="small red">Sign Up</button>
-                <a class="button" href="../HTML/login.html">Log In</a>
+                <a><button class="button border small leftmargin" href="../HTML/login.html">Log In</button></a>
             </div>
         </div>
 
         <!--Nav Bar for Tablet/Mobile-->
         <div class="navbar2">
-            <a class="nav2" href="../HTML/homepage.html" class="active">
+            <a class="nav2 active" href="../HTML/homepage.html" title="Homepage link">
                 <div class="logocontainer">
-                    <img class="logo" src="../Photos/Homepage/logo.png" alt="logo">
+                    <img class="logo" src="../Photos/Homepage/logo.png" alt="Chef's Choicelogo">
                 </div>
             </a>
             <div id="myLinks">
                 <a class="nav2" href="../HTML/menu.html">Menu</a>
                 <a class="nav2" href="../HTML/Plans.html">Our Plans</a>
                 <a class="nav2" href="../HTML//HowitWorks.html">How it Works</a>
-                <a class="nav2" href="../HTML/login.html"><b>LOGIN</b></a>
+                <a class="nav2" href="../HTML/login.html"><strong>LOGIN</strong></a>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label='Open the menu'>
                 <i class="fas fa-bars fa-2x"></i>
             </a>
-        </div>
         </div>
         <!---->
 
@@ -69,7 +71,7 @@
         </section>
     </header>
 
-    <main>
+    <main id="main">
 
         <section class="hero">
             <div class="bannercontent">
@@ -84,22 +86,22 @@
             <div class="roundflexcontainer">
                 <div class="roundflexitem">
                     <img class="roundimg" src="../Photos/Homepage/recipe.png" alt="recipe page">
-                    <h3 class="bold">Choose your meals</h3>
+                    <p class="bold">Choose your meals</p>
                     <p>Select meals from created by our culinary team based on your food preferences. </p>
                 </div>
                 <div class="roundflexitem">
                     <img class="roundimg" src="../Photos/Homepage/computer.png" alt="person on computer">
-                    <h3 class="bold">Create your box</h3>
+                    <p class="bold">Create your box</p>
                     <p>Suit your lifestyle with a variety of options, like adding bread to your meal. </p>
                 </div>
                 <div class="roundflexitem">
                     <img class="roundimg" src="../Photos/Homepage/delivery.png" alt="delivery person">
-                    <h3 class="bold">Schedule your delivery</h3>
+                    <p class="bold">Schedule your delivery</p>
                     <p>Select a delivery time that works for you. We have flexible hours to serve you. </p>
                 </div>
                 <div class="roundflexitem">
                     <img class="roundimg" src="../Photos/Homepage/cooking.png" alt="person cooking">
-                    <h3 class="bold">Cook your meal</h3>
+                    <p class="bold">Cook your meal</p>
                     <p>Follow our easy instructions to create a delicious, nutritious meal at home. </p>
                 </div>
             </div>
@@ -109,11 +111,11 @@
         <section class="contentblockgrey">
             <h2>On the Menu This Week</h2>
             <div class="rectangularflexcontainer">
-                <img class="arrow" src="../Photos/Homepage/arrowleft.png">
+                <img class="arrow" src="../Photos/Homepage/arrowleft.png" alt="left facing arrow">
                 <div class="rectangleflexitem">
                     <img class="cardimg" src="../Photos/Homepage/eggrisotto.jpg" alt="egg risotto">
                     <div class="cardtext">
-                        <h5 class="cardheader">Cucumber Risotto</h5>
+                        <p class="cardheader">Cucumber Risotto</p>
                         <p class="cardsubhead">with Aged Cheddar and Cilantro</p>
                         <button class="small borderbold bottommargin">Order Recipe</button>
                     </div>
@@ -121,7 +123,7 @@
                 <div class="rectangleflexitem">
                     <img class="cardimg" src="../Photos/Homepage/shortribs.jpg" alt="short ribs">
                     <div class="cardtext">
-                        <h5 class="cardheader">Barbeque Short Ribs</h5>
+                        <p class="cardheader">Barbeque Short Ribs</p>
                         <p class="cardsubhead">with Mixed Vegetables</p>
                         <button class="small borderbold bottommargin">Order Recipe</button>
                     </div>
@@ -129,12 +131,12 @@
                 <div class="rectangleflexitem">
                     <img class="cardimg" src="../Photos/Homepage/berrysalad.jpg" alt="berry salad">
                     <div class="cardtext">
-                        <h5 class="cardheader">Summer Berry Salad</h5>
+                        <p class="cardheader">Summer Berry Salad</p>
                         <p class="cardsubhead">with Strawberries and Pecans</p>
                         <button class="small borderbold bottommargin">Order Recipe</button>
                     </div>
                 </div>
-                <img class="arrow" src="../Photos/Homepage/arrowright.png">
+                <img class="arrow" src="../Photos/Homepage/arrowright.png" alt="right facing arrow">
             </div>
             <a href="../HTML/menu.html"><button class="small green bottomextramargin">View All</button></a>
         </section>
@@ -143,18 +145,18 @@
             <h2>What Our Customers Say</h2>
             <div class="quoteflexcontainer">
                 <div class="quoteflexitem">
-                    <img class="quoteimg" src="../Photos/Homepage/quotes.png">
-                    <h6>Susan said</h6>
+                    <img class="quoteimg" src="../Photos/Homepage/quotes.png" alt="quote punctuation marks">
+                    <p>Susan said</p>
                     <p>Chef’s Choice has helped me actually enjoy cooking again. I have saved so much time after work by
                         no longer having to go to the grocery store. I can just come home and get cooking! </p>
-                    <img class="starsimg" src="../Photos/Homepage/stars.png">
+                    <img class="starsimg" src="../Photos/Homepage/stars.png" alt="5 stars">
                 </div>
                 <div class="quoteflexitem">
-                    <img class="quoteimg" src="../Photos/Homepage/quotes.png">
-                    <h6>Tim said</h6>
+                    <img class="quoteimg" src="../Photos/Homepage/quotes.png" alt="quote punctuation marks">
+                    <p>Tim said</p>
                     <p>My wife and daughter love the meals and I love that I can save time and money on groceries. No
                         more wasted food- we just buy what we need for each meal and the food is delicious! </p>
-                    <img class="starsimg" src="../Photos/Homepage/stars.png">
+                    <img class="starsimg" src="../Photos/Homepage/stars.png" alt="5 stars">
                 </div>
             </div>
             <button class="small green bottoextrammargin">View More</button>
@@ -162,7 +164,7 @@
 
         <section class="imagebanner">
             <div class="bannercontent">
-                <h1 class="heroheader bold">Get Started</h1>
+                <h3 class="heroheader bold">Get Started</h3>
                 <div class="xlargeheading">Discover an easy way to cook healthy, delicious meals.</div>
                 <a href="../HTML/Plans.html"><button class="small red">Sign Up</button></a>
             </div>
@@ -172,6 +174,13 @@
 
     <footer>
         <div class="footertop_flexcontainer">
+            <div class="footerflexitem">
+                <h4>NAVIGATE</h4>
+                <p><a class="footerlinks" href="../HTML/menu.html">On the Menu</a> </p>
+                <p><a class="footerlinks" href="../HTML/Plans.html">Plans</a> </p>
+                <p><a class="footerlinks" href="../HTML/HowitWorks.html">How it Works</a> </p>
+                <p><a class="footerlinks" href="../HTML/login.html">Login</a> </p>
+            </div>
             <div class="footerflexitem">
                 <h4>OUR COMPANY</h4>
                 <p>Our Story</p>

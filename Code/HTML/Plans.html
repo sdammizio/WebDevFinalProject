@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Plans</title>
     <link rel="stylesheet" href="../CSS/Plans.css" />
     <link rel="stylesheet" href="../CSS/button.css">
     <link rel="stylesheet" href="../CSS/navigationbar.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
@@ -25,10 +26,13 @@
 
 <body>
     <header>
+        <a class="skip-link" href='#main'>Skip to Content</a>
+
+        <!--Nav Bar for Desktop-->
         <div class="navbar">
-            <a class="logo" href="../HTML/homepage.html" class="active">
+            <a class="logo active" href="../HTML/homepage.html" title="Homepage link">
                 <div class="logocontainer">
-                    <img class="logo" src="../Photos/Homepage/logo.png" alt="logo">
+                    <img class="logo" src="../Photos/Homepage/logo.png" alt="Chef's Choice logo">
                 </div>
             </a>
             <ul class="middle-nav">
@@ -38,27 +42,26 @@
             </ul>
             <div class="loginbuttons">
                 <button class="small red">Sign Up</button>
-                <a class="button" href="../HTML/login.html">Log In</a>
+                <a><button class="button border small leftmargin" href="../HTML/login.html">Log In</button></a>
             </div>
         </div>
 
         <!--Nav Bar for Tablet/Mobile-->
         <div class="navbar2">
-            <a class="nav2" href="../HTML/homepage.html" class="active">
+            <a class="nav2 active" href="../HTML/homepage.html" title="Homepage link">
                 <div class="logocontainer">
-                    <img class="logo" src="../Photos/Homepage/logo.png" alt="logo">
+                    <img class="logo" src="../Photos/Homepage/logo.png" alt="Chef's Choice logo">
                 </div>
             </a>
             <div id="myLinks">
                 <a class="nav2" href="../HTML/menu.html">Menu</a>
                 <a class="nav2" href="../HTML/Plans.html">Our Plans</a>
                 <a class="nav2" href="../HTML/HowitWorks.html">How it Works</a>
-                <a class="nav2" href="../HTML/login.html"><b>LOGIN</b></a>
+                <a class="nav2" href="../HTML/login.html"><strong>LOGIN</strong></a>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label='Open the menu'>
                 <i class="fas fa-bars fa-2x"></i>
             </a>
-        </div>
         </div>
         <!---->
 
@@ -84,7 +87,7 @@
                 <div class="flexcontainer_columns">
                     <div class="flexcontainer_column_choose">
                         <div class="flexcontainer_smallheading">
-                            <h4>1.Choose your preference</h3>
+                            <p class="planheading">1.Choose your preference</p>
                         </div>
                         <div class="choicegrid">
                             <div class="choiceitem">
@@ -107,16 +110,16 @@
                     </div>
                     <div class="flexcontainer_column_choose">
                         <div class="flexcontainer_smallheading">
-                            <h4>2. Select plan size</h3>
+                            <p class="planheading">2. Select plan size</p>
                         </div>
                         <div class="formgrid">
                             <div class="formitem">
-                                <label for="people">Number of people</label>
-                                <input name="number" required="required" type="number" />
+                                <label for="numberofpeople">Number of people</label>
+                                <input id="numberofpeople" name="number" required="required" type="number" />
                             </div>
                             <div class="formitem">
-                                <label for="recipes">Recipes per week</label>
-                                <input name="number" required="required" type="number" />
+                                <label for="numberofrecipes">Recipes per week</label>
+                                <input id="numberofrecipes" name="number" required="required" type="number" />
                             </div>
                         </div>
                     </div>
@@ -129,13 +132,13 @@
         </section>
 
         <section class="contentblockgrey">
-            <h2>On the Menu This Week</h2>
+            <h3>On the Menu This Week</h3>
             <div class="rectangularflexcontainer">
-                <img class="arrow" src="../Photos/Homepage/arrowleft.png">
+                <img class="arrow" src="../Photos/Homepage/arrowleft.png" alt="left pointing arrow">
                 <div class="rectangleflexitem">
                     <img class="cardimg" src="../Photos/Homepage/eggrisotto.jpg" alt="egg risotto">
                     <div class="cardtext">
-                        <h5 class="cardheader">Cucumber Risotto</h5>
+                        <p class="cardheader">Cucumber Risotto</p>
                         <p class="cardsubhead">with Aged Cheddar and Cilantro</p>
                         <button class="small borderbold bottommargin">Order Recipe</button>
                     </div>
@@ -143,7 +146,7 @@
                 <div class="rectangleflexitem">
                     <img class="cardimg" src="../Photos/Homepage/shortribs.jpg" alt="short ribs">
                     <div class="cardtext">
-                        <h5 class="cardheader">Barbeque Short Ribs</h5>
+                        <p class="cardheader">Barbeque Short Ribs</p>
                         <p class="cardsubhead">with Mixed Vegetables</p>
                         <button class="small borderbold bottommargin">Order Recipe</button>
                     </div>
@@ -151,12 +154,12 @@
                 <div class="rectangleflexitem">
                     <img class="cardimg" src="../Photos/Homepage/berrysalad.jpg" alt="berry salad">
                     <div class="cardtext">
-                        <h5 class="cardheader">Summer Berry Salad</h5>
+                        <p class="cardheader">Summer Berry Salad</p>
                         <p class="cardsubhead">with Strawberries and Pecans</p>
                         <button class="small borderbold bottommargin">Order Recipe</button>
                     </div>
                 </div>
-                <img class="arrow" src="../Photos/Homepage/arrowright.png">
+                <img class="arrow" src="../Photos/Homepage/arrowright.png" alt="right pointing arrow">
             </div>
             <a href="../HTML/menu.html"><button class="small green bottomextramargin">View All</button></a> 
         </section>
@@ -165,6 +168,13 @@
 
     <footer>
         <div class="footertop_flexcontainer">
+            <div class="footerflexitem">
+                <h4>NAVIGATE</h4>
+                <p><a class="footerlinks" href="../HTML/menu.html">On the Menu</a> </p>
+                <p><a class="footerlinks" href="../HTML/Plans.html">Plans</a> </p>
+                <p><a class="footerlinks" href="../HTML/HowitWorks.html">How it Works</a> </p>
+                <p><a class="footerlinks" href="../HTML/login.html">Login</a> </p>
+            </div>
             <div class="footerflexitem">
                 <h4>OUR COMPANY</h4>
                 <p>Our Story</p>

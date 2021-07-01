@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>How it Works</title>
@@ -25,10 +25,13 @@
 
 <body>
     <header>
+        <a class="skip-link" href='#main'>Skip to Content</a>
+
+        <!--Nav Bar for Desktop-->
         <div class="navbar">
-            <a class="logo" href="../HTML/homepage.html" class="active">
+            <a class="logo active" href="../HTML/homepage.html" title="Homepage link">
                 <div class="logocontainer">
-                    <img class="logo" src="../Photos/Homepage/logo.png" alt="logo">
+                    <img class="logo" src="../Photos/Homepage/logo.png" alt="Chef's Choice logo">
                 </div>
             </a>
             <ul class="middle-nav">
@@ -38,27 +41,26 @@
             </ul>
             <div class="loginbuttons">
                 <button class="small red">Sign Up</button>
-                <a class="button" href="../HTML/login.html">Log In</a>
+                <a><button class="button border small leftmargin" href="../HTML/login.html">Log In</button></a>
             </div>
         </div>
 
         <!--Nav Bar for Tablet/Mobile-->
         <div class="navbar2">
-            <a class="nav2" href="../HTML/homepage.html" class="active">
+            <a class="nav2 active" href="../HTML/homepage.html" title="Homepage link">
                 <div class="logocontainer">
-                    <img class="logo" src="../Photos/Homepage/logo.png" alt="logo">
+                    <img class="logo" src="../Photos/Homepage/logo.png" alt="Chef's Choice logo">
                 </div>
             </a>
             <div id="myLinks">
                 <a class="nav2" href="../HTML/menu.html">Menu</a>
                 <a class="nav2" href="../HTML/Plans.html">Our Plans</a>
                 <a class="nav2" href="../HTML/HowitWorks.html">How it Works</a>
-                <a class="nav2" href="../HTML/login.html"><b>LOGIN</b></a>
+                <a class="nav2" href="../HTML/login.html"><strong>LOGIN</strong></a>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label='Open the menu'>
                 <i class="fas fa-bars fa-2x"></i>
             </a>
-        </div>
         </div>
         <!---->
 
@@ -77,7 +79,7 @@
         <section class="desktopgridlayout">
             <section class="contentblockwhite_section">
                 <div class="contentflexcontainer">
-                    <img class="mainimg" src="../Photos/HowWorks/recipe.jpg">
+                    <img class="mainimg" src="../Photos/HowWorks/recipe.jpg" alt="recipe page">
                     <div class="textflexcontainer">
                         <h3>1.Choose your meals</h3>
                         <p>Select meals from created by our culinary team based on your food preferences. </p>
@@ -90,10 +92,10 @@
                         <p>Suit your lifestyle with a variety of options, like adding bread to your meal. </p>
                         <a href="../HTML/Plans.html"><button class="small green">Get Started</button></a>
                     </div>
-                    <img class="mainimg" src="../Photos/HowWorks/computer.jpg">
+                    <img class="mainimg" src="../Photos/HowWorks/computer.jpg" alt="desk with computer">
                 </div>
                 <div class="contentflexcontainer">
-                    <img class="mainimg" src="../Photos/HowWorks/delivery.jpg">
+                    <img class="mainimg" src="../Photos/HowWorks/delivery.jpg" alt="delivery man and package">
                     <div class="textflexcontainer">
                         <h3>3. Schedule your delivery</h3>
                         <p>Select a delivery time that works for you. </p>
@@ -106,7 +108,7 @@
                         <p>Follow our easy instructions to create a delicious, nutritious meal at home. </p>
                         <a href="../HTML/Plans.html"><button class="small green">Get Started</button></a>
                     </div>
-                    <img class="mainimg" src="../Photos/HowWorks/cooking.jpg">
+                    <img class="mainimg" src="../Photos/HowWorks/cooking.jpg" alt="person cooking food">
                 </div>
             </section>
         </section>
@@ -116,7 +118,7 @@
         <section class="mobilegridlayout">
             <section class="contentblockwhite_section">
                 <div class="contentflexcontainer">
-                    <img class="mainimg" src="../Photos/HowWorks/recipe.jpg">
+                    <img class="mainimg" src="../Photos/HowWorks/recipe.jpg" alt="recipe page">
                     <div class="textflexcontainer">
                         <h3>1.Choose your meals</h3>
                         <p>Select meals from created by our culinary team based on your food preferences. </p>
@@ -125,7 +127,7 @@
                 </div>
                 <div class="contentflexcontainer">
                     <div class="textflexcontainer">
-                        <img class="mainimg" src="../Photos/HowWorks/computer.jpg">
+                        <img class="mainimg" src="../Photos/HowWorks/computer.jpg" alt="computer on a desk">
                         <h3>2. Create your box</h3>
                         <p>Suit your lifestyle with a variety of options, like adding bread to your meal. </p>
                         <button class="small green">Get Started</button>
@@ -133,7 +135,7 @@
 
                 </div>
                 <div class="contentflexcontainer">
-                    <img class="mainimg" src="../Photos/HowWorks/delivery.jpg">
+                    <img class="mainimg" src="../Photos/HowWorks/delivery.jpg" alt="delivery man and package">
                     <div class="textflexcontainer">
                         <h3>3. Schedule your delivery</h3>
                         <p>Select a delivery time that works for you. </p>
@@ -142,7 +144,7 @@
                 </div>
                 <div class="contentflexcontainer">
                     <div class="textflexcontainer">
-                        <img class="mainimg" src="../Photos/HowWorks/cooking.jpg">
+                        <img class="mainimg" src="../Photos/HowWorks/cooking.jpg" alt="person cooking food">
                         <h3>4. Cook your meal</h3>
                         <p>Follow our easy instructions to create a delicious, nutritious meal at home. </p>
                         <button class="small green">Get Started</button>
@@ -154,24 +156,24 @@
         <!---->
 
         <section class="contentblockgrey">
-            <h2>Frequently Asked Questions</h2>
-            <div class="searchbar">
-                <input type="text" placeholder="Search..">
+            <h4 class="FAQheading">Frequently Asked Questions</h4>
+            <form id="searchbar">
+                <input type="search" placeholder="Search.." id="query" aria-label="Search through FAQ content">
                 <button class="small green">Find</button>
-            </div>
+            </form>
             <div class="FAQgrid">
                 <div class="FAQgrid_flexbox">
                     <div class="FAQgrid_item">
                         <img class="FAQicon" src="../Photos/HowWorks/creditcard.png" alt="credit card">
-                        <h4>Payments</h6>
+                        <h4>Payments</h4>
                     </div>
                     <div class="FAQgrid_item">
                         <img class="FAQicon" src="../Photos/HowWorks/covid.png" alt="COVID virus">
-                        <h4>COVID-19</h6>
+                        <h4>COVID-19</h4>
                     </div>
                     <div class="FAQgrid_item">
                         <img class="FAQicon" src="../Photos/HowWorks/cheficon.png" alt="chef hat">
-                        <h4>About Chef's Choice</h6>
+                        <h4>About Chef's Choice</h4>
                     </div>
                     <div class="FAQgrid_item">
                         <img class="FAQicon" src="../Photos/HowWorks/delivery.png" alt="delivery truck">
@@ -179,18 +181,18 @@
                     </div>
                     <div class="FAQgrid_item">
                         <img class="FAQicon" src="../Photos/HowWorks/recipes.png" alt="mixing bowl">
-                        <h4>Recipes & Ingredients</h6>
+                        <h4>Recipes & Ingredients</h4>
                     </div>
                     <div class="FAQgrid_item">
                         <img class="FAQicon" src="../Photos/HowWorks/useraccount.png" alt="user icon">
-                        <h4>Manage My Account</h6>
+                        <h4>Manage My Account</h4>
                     </div>
                 </div>
             </div>
             <div class="FAQtext_flexbox">
                 <div class="FAQtext_flexitem">
                     <h4>Can't Find Your Answer?</h6>
-                        <p>Visit our <b>Contact Page</b></p>
+                        <p>Visit our <strong>Contact Page</strong></p>
                 </div>
             </div>
         </section>
@@ -199,6 +201,13 @@
 
     <footer>
         <div class="footertop_flexcontainer">
+            <div class="footerflexitem">
+                <h4>NAVIGATE</h4>
+                <p><a class="footerlinks" href="../HTML/menu.html">On the Menu</a> </p>
+                <p><a class="footerlinks" href="../HTML/Plans.html">Plans</a> </p>
+                <p><a class="footerlinks" href="../HTML/HowitWorks.html">How it Works</a> </p>
+                <p><a class="footerlinks" href="../HTML/login.html">Login</a> </p>
+            </div>
             <div class="footerflexitem">
                 <h4>OUR COMPANY</h4>
                 <p>Our Story</p>
