@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Menu</title>
@@ -25,10 +25,13 @@
 
 <body>
     <header>
+        <a class="skip-link" href='#main'>Skip to Content</a>
+
+         <!--Nav Bar for Desktop-->
         <div class="navbar">
-            <a class="logo" href="../HTML/homepage.html" class="active">
+            <a class="logo active" href="../HTML/homepage.html" title="Homepage link">
                 <div class="logocontainer">
-                    <img class="logo" src="../Photos/Homepage/logo.png" alt="logo">
+                    <img class="logo" src="../Photos/Homepage/logo.png" alt="Chef's Choice logo">
                 </div>
             </a>
             <ul class="middle-nav">
@@ -38,27 +41,26 @@
             </ul>
             <div class="loginbuttons">
                 <button class="small red">Sign Up</button>
-                <a class="button" href="../HTML/login.html">Log In</a>
+                <a><button class="button border small leftmargin" href="../HTML/login.html">Log In</button></a>
             </div>
         </div>
 
         <!--Nav Bar for Tablet/Mobile-->
         <div class="navbar2">
-            <a class="nav2" href="../HTML/homepage.html" class="active">
+            <a class="nav2 active" href="../HTML/homepage.html" title="Homepage link">
                 <div class="logocontainer">
-                    <img class="logo" src="../Photos/Homepage/logo.png" alt="logo">
+                    <img class="logo" src="../Photos/Homepage/logo.png" alt="Chef's Choice logo">
                 </div>
             </a>
             <div id="myLinks">
                 <a class="nav2" href="#news">Menu</a>
                 <a class="nav2" href="../HTML/Plans.html">Our Plans</a>
                 <a class="nav2" href="../HTML/HowitWorks.html">How it Works</a>
-                <a class="nav2" href="../HTML/login.html"><b>LOGIN</b></a>
+                <a class="nav2" href="../HTML/login.html"><strong>LOGIN</strong></a>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label='Open the menu'>
                 <i class="fas fa-bars fa-2x"></i>
             </a>
-        </div>
         </div>
         <!---->
 
@@ -74,9 +76,9 @@
         <section class="contentblockwhite">
             <h2>Menu for Delivery the Week Of:</h2>
             <div class="datepicker">
-                <img src="../Photos/Menus/arrowleft.png">
-                <h1 class="datetext">JUNE 28</h1>
-                <img src="../Photos/Menus/arrowright.png">
+                <img src="../Photos/Menus/arrowleft.png" alt="left pointing arrow">
+                <h2 class="datetext">JUNE 28</h2>
+                <img src="../Photos/Menus/arrowright.png" alt="right pointing arrow">
             </div>
         </section>
 
@@ -85,7 +87,7 @@
                 <div class="rectangleflexitem">
                     <img class="cardimg" src="../Photos/Homepage/eggrisotto.jpg" alt="egg risotto">
                     <div class="cardtext">
-                        <h5 class="cardheader">Egg and Cucumber Risotto</h5>
+                        <p class="cardheader">Egg and Cucumber Risotto</p>
                         <p class="cardsubhead">with Aged Cheddar and Cilantro</p>
                         <button class="small borderbold bottommargin">Order Recipe</button>
                     </div>
@@ -93,7 +95,7 @@
                 <div class="rectangleflexitem">
                     <img class="cardimg" src="../Photos/Homepage/shortribs.jpg" alt="short ribs">
                     <div class="cardtext">
-                        <h5 class="cardheader">Barbeque Short Ribs</h5>
+                        <p class="cardheader">Barbeque Short Ribs</p>
                         <p class="cardsubhead">with Mixed Vegetables</p>
                         <button class="small borderbold bottommargin">Order Recipe</button>
                     </div>
@@ -101,7 +103,7 @@
                 <div class="rectangleflexitem">
                     <img class="cardimg" src="../Photos/Homepage/berrysalad.jpg" alt="berry salad">
                     <div class="cardtext">
-                        <h5 class="cardheader">Summer Berry Salad</h5>
+                        <p class="cardheader">Summer Berry Salad</p>
                         <p class="cardsubhead">with Strawberries and Pecans</p>
                         <button class="small borderbold bottommargin">Order Recipe</button>
                     </div>
@@ -109,7 +111,7 @@
                 <div class="rectangleflexitem">
                     <img class="cardimg" src="../Photos/Menus/pancakes.jpg" alt="pancakes">
                     <div class="cardtext">
-                        <h5 class="cardheader">Pancakes</h5>
+                        <p class="cardheader">Pancakes</p>
                         <p class="cardsubhead">with Mixed Fruit and Caramel Sauce</p>
                         <button class="small borderbold bottommargin">Order Recipe</button>
                     </div>
@@ -117,7 +119,7 @@
                 <div class="rectangleflexitem">
                     <img class="cardimg" src="../Photos/Menus/wonton.jpg" alt="wonton soup">
                     <div class="cardtext">
-                        <h5 class="cardheader">Wonton Soup</h5>
+                        <p class="cardheader">Wonton Soup</p>
                         <p class="cardsubhead">with Scallions</p>
                         <button class="small borderbold bottommargin">Order Recipe</button>
                     </div>
@@ -125,7 +127,7 @@
                 <div class="rectangleflexitem">
                     <img class="cardimg" src="../Photos/Menus/grilledhalibut.jpg" alt="grilled halibut">
                     <div class="cardtext">
-                        <h5 class="cardheader">Grilled Halibut</h5>
+                        <p class="cardheader">Grilled Halibut</p>
                         <p class="cardsubhead">with Lemon-Dill Sauce</p>
                         <button class="small borderbold bottommargin">Order Recipe</button>
                     </div>
@@ -133,7 +135,7 @@
                 <div class="rectangleflexitem">
                     <img class="cardimg" src="../Photos/Menus/pizza.jpg" alt="cheese pizza">
                     <div class="cardtext">
-                        <h5 class="cardheader">Cheese Pizza</h5>
+                        <p class="cardheader">Cheese Pizza</p>
                         <p class="cardsubhead">with Tomato Sauce and Thin Crust</p>
                         <button class="small borderbold bottommargin">Order Recipe</button>
                     </div>
@@ -141,7 +143,7 @@
                 <div class="rectangleflexitem">
                     <img class="cardimg" src="../Photos/Menus/potatosalad.jpg" alt="potato salad">
                     <div class="cardtext">
-                        <h5 class="cardheader">Potato Salad</h5>
+                        <p class="cardheader">Potato Salad</p>
                         <p class="cardsubhead">with Sour Cream, Slaw and Garnishes</p>
                         <button class="small borderbold bottommargin">Order Recipe</button>
                     </div>
@@ -149,7 +151,7 @@
                 <div class="rectangleflexitem">
                     <img class="cardimg" src="../Photos/Menus/skewers.jpg" alt="chicken skewers">
                     <div class="cardtext">
-                        <h5 class="cardheader">Chicken Skewers</h5>
+                        <p class="cardheader">Chicken Skewers</p>
                         <p class="cardsubhead">with Roasted Red Pepper Sauce</p>
                         <button class="small borderbold bottommargin">Order Recipe</button>
                     </div>
@@ -157,7 +159,7 @@
                 <div class="rectangleflexitem">
                     <img class="cardimg" src="../Photos/Menus/fettucine.jpg" alt="fettucine">
                     <div class="cardtext">
-                        <h5 class="cardheader">Fettucine</h5>
+                        <p class="cardheader">Fettucine</p>
                         <p class="cardsubhead">with Tomatoes and Pesto</p>
                         <button class="small borderbold bottommargin">Order Recipe</button>
                     </div>
@@ -165,7 +167,7 @@
                 <div class="rectangleflexitem">
                     <img class="cardimg" src="../Photos/Menus/burrito.jpg" alt="burrito">
                     <div class="cardtext">
-                        <h5 class="cardheader">Chicken Burrito</h5>
+                        <p class="cardheader">Chicken Burrito</p>
                         <p class="cardsubhead">with Mixed Vegetables and Cheese</p>
                         <button class="small borderbold bottommargin">Order Recipe</button>
                     </div>
@@ -173,7 +175,7 @@
                 <div class="rectangleflexitem">
                     <img class="cardimg" src="../Photos/Menus/burgerandfries.jpg" alt="burger and fries">
                     <div class="cardtext">
-                        <h5 class="cardheader">Burger and Fries</h5>
+                        <p class="cardheader">Burger and Fries</p>
                         <p class="cardsubhead">with Garlic Aioli, Lettuce, Tomato and Cheese</p>
                         <button class="small borderbold bottommargin">Order Recipe</button>
                     </div>
@@ -181,7 +183,7 @@
                 <div class="rectangleflexitem">
                     <img class="cardimg" src="../Photos/Menus/searedsalmon.jpg" alt="Seared Salmon">
                     <div class="cardtext">
-                        <h5 class="cardheader">Seared Salmon</h5>
+                        <p class="cardheader">Seared Salmon</p>
                         <p class="cardsubhead">with Spinach Risotto</p>
                         <button class="small borderbold bottommargin">Order Recipe</button>
                     </div>
@@ -189,7 +191,7 @@
                 <div class="rectangleflexitem">
                     <img class="cardimg" src="../Photos/Menus/sirloin.jpg" alt="grilled sirloin">
                     <div class="cardtext">
-                        <h5 class="cardheader">Grilled Sirloin</h5>
+                        <p class="cardheader">Grilled Sirloin</p>
                         <p class="cardsubhead">with Mixed Vegetables</p>
                         <button class="small borderbold bottommargin">Order Recipe</button>
                     </div>
@@ -197,7 +199,7 @@
                 <div class="rectangleflexitem">
                     <img class="cardimg" src="../Photos/Menus/hamburgernadfries.jpg" alt="hamburger and fries">
                     <div class="cardtext">
-                        <h5 class="cardheader">Hamburger and Fries</h5>
+                        <p class="cardheader">Hamburger and Fries</p>
                         <p class="cardsubhead">with Garlic Aioli and Fried Egg</p>
                         <button class="small borderbold bottommargin">Order Recipe</button>
                     </div>
@@ -207,7 +209,7 @@
 
         <section class="imagebanner">
             <div class="bannercontent">
-                <h1 class="heroheader bold">Get Started</h1>
+                <h3 class="heroheader bold">Get Started</h3>
                 <div class="xlargeheading">Discover an easy way to cook healthy, delicious meals.</div>
                 <a href="../HTML/Plans.html"><button class="small red">Sign Up</button></a> 
             </div>
@@ -217,6 +219,13 @@
 
     <footer>
         <div class="footertop_flexcontainer">
+            <div class="footerflexitem">
+                <h4>NAVIGATE</h4>
+                <p><a class="footerlinks" href="../HTML/menu.html">On the Menu</a> </p>
+                <p><a class="footerlinks" href="../HTML/Plans.html">Plans</a> </p>
+                <p><a class="footerlinks" href="../HTML/HowitWorks.html">How it Works</a> </p>
+                <p><a class="footerlinks" href="../HTML/login.html">Login</a> </p>
+            </div>
             <div class="footerflexitem">
                 <h4>OUR COMPANY</h4>
                 <p>Our Story</p>

@@ -1,3 +1,6 @@
+.html {
+    font-size: 62.5%;
+}
 .footertop_flexcontainer {
     background-color: #C6D993;
     color: #2C351D;
@@ -34,6 +37,20 @@
 .socialicon {
     max-width: 20px;
 }
+
+a.footerlinks {
+    text-decoration: none;
+    color: #2C351D;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+a.footerlinks:hover {
+    color: #d6533f;
+    text-decoration: none;
+}
+
 
 
 /* Responsivity - Tablet/Mobile */

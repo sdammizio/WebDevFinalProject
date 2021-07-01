@@ -1,10 +1,14 @@
+.html {
+    font-size: 62.5%;
+}
+
 .small {
     border-radius: 4px;
     padding:11px 20px;
     font-size: 16px;
+    font-size:1rem;
     font-family: 'Inter', sans-serif;
     border:none;
-    font-size: 16px;
     text-align: center;
     border:none;
     box-shadow: rgba(99, 99, 99, 0.5) 0px 0px 8px 0px;
@@ -26,6 +30,7 @@
     border: 1px solid #45542D;
     background-color: white;
     font-size: 14px;
+    font-size: 0.875rem;
     padding:5px 15px;
 }
 
@@ -39,9 +44,9 @@
     padding:11px 80px;
     border-radius: 4px;
     font-size: 16px;
+    font-size: 1rem;
     font-family: 'Inter', sans-serif;
     border:none;
-    font-size: 16px;
     text-align: center;
     border:none;
     box-shadow: rgba(99, 99, 99, 0.5) 0px 0px 8px 0px;
@@ -51,9 +56,9 @@
     padding:11px 130px;
     border-radius: 4px;
     font-size: 16px;
+    font-size: 1rem;
     font-family: 'Inter', sans-serif;
     border:none;
-    font-size: 16px;
     text-align: center;
     border:none;
     box-shadow: rgba(99, 99, 99, 0.5) 0px 0px 8px 0px;

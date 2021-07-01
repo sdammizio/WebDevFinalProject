@@ -1,3 +1,6 @@
+.html {
+    font-size: 62.5%;
+  }
 body {
     font-family: Arial, Helvetica, sans-serif;  
 }
@@ -20,9 +23,11 @@ body {
     justify-content: center;
     align-items: center;
 }
-h2 {
+h2, section.contentblockgrey>h3 {
     font-size: 30px;
+    font-size: 1.875rem;
 }
+
 
 .flexcontainer_overall {
     margin: 40px;
@@ -94,9 +99,12 @@ h2 {
     box-shadow: rgba(0, 0, 0, 0.15) 3.95px 3.95px 5.6px;
 }
 
-h4 {
+
+
+h4.planheading {
     color: #6E6C6C;
     font-size: 18px;
+    font-size: 1.125rem;
     font-weight: normal;
 }
 
@@ -138,6 +146,7 @@ p.redtext {
 
 p.smalltext {
     font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .pricegrid {
@@ -168,6 +177,7 @@ p.smalltext {
 label {
     color: #6E6C6C;
     font-size: 14px;
+    font-size: 0.875rem;
     margin-right: 5px;
 }
 
@@ -176,6 +186,7 @@ input {
     border: 2px solid #45542D; 
     border-radius: 4px;
 }
+
 
 
 /*Grey Content Block */
@@ -229,6 +240,7 @@ input {
 
 .cardheader {
     font-size: 18px;
+    font-size: 1.125rem;
     font-weight: normal;
     margin-bottom: 5px;
     color: #2C351D;
@@ -236,6 +248,7 @@ input {
 
 .cardsubhead{
     font-size: 12px;
+    font-size: 0.75rem;
 }
 
 

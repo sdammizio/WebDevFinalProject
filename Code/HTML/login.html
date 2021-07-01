@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Login</title>
@@ -25,10 +25,13 @@
 
 <body>
     <header>
+        <a class="skip-link" href='#main'>Skip to Content</a>
+
+        <!--Nav Bar for Desktop-->
         <div class="navbar">
-            <a class="logo" href="../HTML/homepage.html" class="active">
+            <a class="logo active" href="../HTML/homepage.html" title="Homepage link">
                 <div class="logocontainer">
-                    <img class="logo" src="../Photos/Homepage/logo.png" alt="logo">
+                    <img class="logo" src="../Photos/Homepage/logo.png" alt="Chef's Choice logo">
                 </div>
             </a>
             <ul class="middle-nav">
@@ -38,27 +41,26 @@
             </ul>
             <div class="loginbuttons">
                 <button class="small red">Sign Up</button>
-                <a class="button" href="../HTML/login.html">Log In</a>
+                <a><button class="button border small leftmargin" href="../HTML/login.html">Log In</button></a>
             </div>
         </div>
 
         <!--Nav Bar for Tablet/Mobile-->
         <div class="navbar2">
-            <a class="nav2" href="../HTML/homepage.html" class="active">
+            <a class="nav2 active" href="../HTML/homepage.html" title="Homepage link">
                 <div class="logocontainer">
-                    <img class="logo" src="../Photos/Homepage/logo.png" alt="logo">
+                    <img class="logo" src="../Photos/Homepage/logo.png" alt="Chef's Choice logo">
                 </div>
             </a>
             <div id="myLinks">
                 <a class="nav2" href="../HTML/menu.html">Menu</a>
                 <a class="nav2" href="../HTML/Plans.html">Our Plans</a>
                 <a class="nav2" href="../HTML/HowitWorks.html">How it Works</a>
-                <a class="nav2" href="../HTML/login.html"><b>LOGIN</b></a>
+                <a class="nav2" href="../HTML/login.html"><strong>LOGIN</strong></a>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()" aria-label='Open the menu'>
                 <i class="fas fa-bars fa-2x"></i>
             </a>
-        </div>
         </div>
         <!---->
 
@@ -76,11 +78,15 @@
                 <div class="flexitem">
                     <h3>SIGN IN TO CHEF'S CHOICE</h3>
                     <div class="forms">
-                        <input name="email" required="required" type="email" placeholder="email address" />
-                        <input name="password" required="required" type="password" placeholder="password" />
+                        <form>
+                            <input name="email" required="required" type="email" placeholder="email address" aria-label="Enter your email address"/>
+                        </form>
+                        <form>
+                            <input name="password" required="required" type="password" placeholder="password" aria-label="Enter your password" />
+                        </form>
                     </div>
                     <button class="extralarge red bottoextrammargin">LOG IN</button>
-                    <p class="logintext">Forgot your Password? <br>New to Chef’s Choice? <b>Sign Up Here</b><br></p>
+                    <p class="logintext">Forgot your Password? <br>New to Chef’s Choice? <strong>Sign Up Here</strong><br></p>
                 </div>
             </div>
         </section>
@@ -89,6 +95,13 @@
 
     <footer>
         <div class="footertop_flexcontainer">
+            <div class="footerflexitem">
+                <h4>NAVIGATE</h4>
+                <p><a class="footerlinks" href="../HTML/menu.html">On the Menu</a> </p>
+                <p><a class="footerlinks" href="../HTML/Plans.html">Plans</a> </p>
+                <p><a class="footerlinks" href="../HTML/HowitWorks.html">How it Works</a> </p>
+                <p><a class="footerlinks" href="../HTML/login.html">Login</a> </p>
+            </div>
             <div class="footerflexitem">
                 <h4>OUR COMPANY</h4>
                 <p>Our Story</p>
