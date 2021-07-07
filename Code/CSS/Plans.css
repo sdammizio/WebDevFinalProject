@@ -78,7 +78,7 @@ h2, section.contentblockgrey>h3 {
     flex-direction: row;
     align-items: space-evenly;
     justify-content: flex-start;
-    max-width: 50%;
+    max-width: 400px;
     flex-wrap: wrap;
 }
 
