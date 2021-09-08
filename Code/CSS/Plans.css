@@ -274,6 +274,10 @@ input {
     }
     .cardimg {
         max-width: -webkit-fill-available;
+        width: 100%;
+        width: -moz-available;          
+        width: -webkit-fill-available;  
+        width: fill-available;
     }    
     .flexcontainer_overall{
         margin:20px;
