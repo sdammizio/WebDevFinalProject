@@ -76,6 +76,13 @@ h4.FAQheading {
     margin-top:50px; 
     width:100%;
     }
+
+#searchInput {
+    -webkit-appearance: none;
+    width: 150px !important;
+    height: 50px !important;
+}
+    
 .FAQgrid {
     display: flex;
     flex-direction: row;
